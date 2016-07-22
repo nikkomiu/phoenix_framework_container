@@ -14,3 +14,7 @@ RUN mix local.hex --force
 
 # Install Phoenix
 RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez --force
+
+# Install Ruby SASS Parser
+RUN apt-get install ruby-full -y
+RUN gem install sass
